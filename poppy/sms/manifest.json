@@ -1,7 +1,0 @@
-{
-	"name": "短信模块",
-	"slug": "sms",
-	"version": "1.0",
-	"order": 1009,
-	"description": "短信模块, 支持Aliyun/Local"
-}

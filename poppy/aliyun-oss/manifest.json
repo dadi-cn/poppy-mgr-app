@@ -1,7 +1,0 @@
-{
-	"name": "阿里云上传",
-	"slug": "aliyun-oss",
-	"version": "1.0",
-	"order": 1009,
-	"description": "Poppy aliyun-oss module."
-}

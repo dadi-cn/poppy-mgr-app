@@ -1,3 +1,0 @@
--
-  name: 'poppy.ad.form_place_selection'
-  builder: '\Poppy\Ad\Hooks\FormPlaceSelection\Place'

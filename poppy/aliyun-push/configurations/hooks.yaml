@@ -1,4 +1,0 @@
--
-  name : 'poppy.system.settings'
-  hooks :
-    - '\Poppy\AliyunPush\Services\SettingAliyunPush'

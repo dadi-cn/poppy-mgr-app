@@ -1,7 +1,0 @@
-{
-	"name": "广告",
-	"slug": "ad",
-	"version": "1.0",
-	"order": 1009,
-	"description": "This is the description for the poppy ad module."
-}

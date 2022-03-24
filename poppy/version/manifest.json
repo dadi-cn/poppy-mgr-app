@@ -1,7 +1,0 @@
-{
-    "name": "App版本管理",
-    "slug": "version",
-    "version": "1.0",
-    "order": 1009,
-    "description": "App 版本管理, 管理 IOS/Android 在app 内的更新"
-}

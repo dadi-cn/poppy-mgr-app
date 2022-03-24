@@ -1,7 +1,0 @@
-{
-	"name": "阿里云推送",
-	"slug": "aliyun-push",
-	"version": "1.0",
-	"order": 1009,
-	"description": "Poppy aliyun-push module."
-}

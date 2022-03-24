@@ -1,3 +1,0 @@
-poppy.sms.send_type:
-  title: 短信发送类型
-  type: array

@@ -1,8 +1,0 @@
-demo.array_demo:
-  title: 数组服务Demo
-  type: array
-  description: 数组服务Demo
-demo.html_demo:
-  title: Html Demo
-  type: html
-  description: Html Demo

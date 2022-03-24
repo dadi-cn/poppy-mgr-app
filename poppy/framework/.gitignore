@@ -1,7 +1,0 @@
-/.idea
-/vendor
-/composer.lock
-!/vendor/.gitkeep
-
-tests/files/*.pem
-tests/files/*.pub

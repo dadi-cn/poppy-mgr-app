@@ -42,29 +42,6 @@ Thumbs.db
 .svn
 # IDE #
 #######
-.idea
+.idea/
 /nbproject/
-
-# Project User #
-################
-.sass-cache
-/vendor
-/storage/framework/*.php
-.phpunit.cache
-/public/uploads/*
-modules/op/tests/files/account.json
-/public/dev/*
-!/public/uploads/.gitkeep
-/node_modules
-.env
-composer.lock
-package-lock.json
-yarn.lock
-_ide_helper.php
-_ide_helper_models.php
-.phpstorm.meta.php
-.phpunit.result.cache
-/storage/clockwork/
-/resources/http/http-client.private.env.json
-/storage/phpunit/
-
+.vscode

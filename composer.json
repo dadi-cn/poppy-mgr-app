@@ -1,170 +1,28 @@
 {
-    "name": "wulicode/poppy",
-    "description": "The Laravel Framework.",
-    "keywords": [
-        "framework",
-        "laravel"
+    "name": "poppy/mgr-app",
+    "description": "An form support module for poppy sep system",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Mark Zhao",
+            "email": "zhaody901@126.com"
+        }
     ],
-    "license": "MIT",
-    "type": "project",
     "require": {
         "php": ">=7.4",
-        "ext-dom": "*",
-        "ext-json": "*",
-        "ext-simplexml": "*",
-        "ext-openssl": "*",
-        "ext-pdo": "*",
-        "ext-gd": "*",
-        "ext-curl": "*",
-        "ext-mbstring": "*",
-        "ext-bcmath": "*",
-        "ext-fileinfo": "*",
-        "ext-libxml": "*",
-        "ext-xml": "*",
-        "symfony/console": "4.*",
-        "symfony/finder": "4.*",
-        "symfony/yaml": "4.*",
-        "elasticsearch/elasticsearch": "7.*",
-        "jenssegers/date": "^4.0",
-        "laravel/framework": "6.*",
-        "intervention/image": "2.*",
-        "laravelcollective/html": "^6.0",
-        "mews/captcha": "3.*",
-        "predis/predis": "~1.1",
-        "aliyuncs/oss-sdk-php": "^2.3",
-        "tucker-eric/eloquentfilter": "^3",
-        "tymon/jwt-auth": "1.0.*",
-        "hieu-le/active": "4.0.*",
-        "php-curl-class/php-curl-class": "9.*",
-        "alibabacloud/client": "^1.5",
-        "alibabacloud/push": "^1.8",
-        "alibabacloud/dysmsapi": "^1.8",
-        "alibabacloud/sts": "^1.8",
-        "overtrue/pinyin": "^4.0",
-        "overtrue/wechat": "~4.0",
-        "xingwenge/canal_php": "^1.0",
-        "mlocati/ip-lib": "^1.16",
-        "guzzlehttp/guzzle": "^7.3"
-    },
-    "require-dev": {
-        "itsgoingd/clockwork": "^5.1",
-        "barryvdh/laravel-ide-helper": "2.8.*",
-        "doctrine/dbal": "^2.6",
-        "kitloong/laravel-migrations-generator": "^5.2"
+        "poppy/system": "3.2.*"
     },
     "autoload": {
         "psr-4": {
-            "Misc\\Foundation\\": "modules/misc/src/foundation",
-            "Poppy\\Extension\\Alipay\\": "poppy/ext-alipay/src",
-            "Poppy\\Extension\\Alipay\\Tests\\": "poppy/ext-alipay/tests",
-            "Poppy\\Extension\\IpStore\\": "poppy/ext-ip_store/src",
-            "Poppy\\Extension\\IpStore\\Tests\\": "poppy/ext-ip_store/tests",
-            "Poppy\\Extension\\Pinyin\\": "poppy/ext-pinyin/src",
-            "Poppy\\Extension\\Pinyin\\Tests\\": "poppy/ext-pinyin/tests",
-            "Poppy\\Extension\\Wxpay\\": "poppy/ext-wxpay/src",
-            "Poppy\\Extension\\Wxpay\\Tests\\": "poppy/ext-wxpay/tests",
-            "Poppy\\Faker\\": "poppy/faker/src",
-            "Faker\\": "poppy/faker/src/Faker",
-            "Poppy\\Faker\\Tests\\": "poppy/faker/tests",
-            "Poppy\\Framework\\": "poppy/framework/src",
-            "Poppy\\Framework\\Tests\\": "poppy/framework/tests",
-            "Poppy\\Core\\": "poppy/core/src",
-            "Poppy\\Core\\Tests\\": "poppy/core/tests",
-            "Poppy\\System\\": "poppy/system/src",
-            "Poppy\\System\\Tests\\": "poppy/system/tests",
-            "Poppy\\MgrPage\\": "poppy/mgr-page/src/",
-            "Poppy\\MgrPage\\Tests\\": "poppy/mgr-page/tests/",
-            "Poppy\\Ad\\": "poppy/ad/src",
-            "Poppy\\Ad\\Tests\\": "poppy/ad/tests",
-            "Poppy\\Area\\": "poppy/area/src",
-            "Poppy\\Area\\Tests\\": "poppy/area/tests",
-            "Poppy\\Sms\\": "poppy/sms/src",
-            "Poppy\\Sms\\Tests\\": "poppy/sms/tests",
-            "Poppy\\Version\\": "poppy/version/src",
-            "Poppy\\Version\\Tests\\": "poppy/version/tests",
-            "Poppy\\AliyunPush\\": "poppy/aliyun-push/src",
-            "Poppy\\AliyunPush\\Tests\\": "poppy/aliyun-push/tests",
-            "Poppy\\SensitiveWord\\": "poppy/sensitive-word/src",
-            "Poppy\\SensitiveWord\\Tests\\": "poppy/sensitive-word/tests",
-            "Poppy\\AliyunOss\\": "poppy/aliyun-oss/src",
-            "Poppy\\AliyunOss\\Tests\\": "poppy/aliyun-oss/tests",
-            "Poppy\\CanalEs\\": "poppy/canal-es/src/",
-            "Poppy\\CanalEs\\Tests\\": "poppy/canal-es/tests/",
-            "Php\\Tests\\": "modules/php/tests",
-            "Misc\\Tests\\": "modules/misc/tests",
-            "Op\\Tests\\": "modules/op/tests"
+            "Poppy\\MgrApp\\": "src/",
+            "Poppy\\MgrApp\\Tests\\": "tests/"
         },
         "files": [
-            "poppy/framework/src/Support/functions.php",
-            "poppy/system/src/Support/functions.php",
-            "poppy/core/src/Support/functions.php",
-            "poppy/ext-pinyin/src/Support/functions.php",
-            "poppy/sensitive-word/src/Support/functions.php"
-        ]
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": [
-                "laravelcollective/html"
-            ]
-        }
-    },
-    "scripts": {
-        "coding": [
-            "git subtree push --prefix=poppy/framework  coding-framework 3.2",
-            "git subtree push --prefix=poppy/mgr-page  coding-mgr-page 3.2",
-            "git subtree push --prefix=poppy/core  coding-core 3.2",
-            "git subtree push --prefix=poppy/system  coding-system 3.2",
-            "git subtree push --prefix=poppy/faker  coding-faker 3.2",
-            "git subtree push --prefix=poppy/version  coding-version 3.2",
-            "git subtree push --prefix=poppy/aliyun-oss  coding-aliyun-oss 3.2",
-            "git subtree push --prefix=poppy/aliyun-push  coding-aliyun-push 3.2",
-            "git subtree push --prefix=poppy/area  coding-area 3.2",
-            "git subtree push --prefix=poppy/sensitive-word  coding-sensitive-word 3.2",
-            "git subtree push --prefix=poppy/sms  coding-sms 3.2",
-            "git subtree push --prefix=poppy/ext-alipay  coding-ext-alipay 3.2",
-            "git subtree push --prefix=poppy/ext-ip_store  coding-ext-ip_store 3.2",
-            "git subtree push --prefix=poppy/ext-pinyin  coding-ext-pinyin 3.2",
-            "git subtree push --prefix=poppy/ext-wxpay  coding-ext-wxpay 3.2",
-            "git subtree push --prefix=poppy/ad  coding-ad 3.2",
-            "git subtree push --prefix=poppy/canal-es  coding-canal-es 3.2"
-        ],
-        "github": [
-            "git subtree push --prefix=poppy/system  gh-system 3.2",
-            "git subtree push --prefix=poppy/mgr-page  gh-mgr-page 3.2",
-            "git subtree push --prefix=poppy/core  gh-core 3.2",
-            "git subtree push --prefix=poppy/framework  gh-framework 3.2",
-            "git subtree push --prefix=poppy/aliyun-oss  gh-aliyun-oss 3.2",
-            "git subtree push --prefix=poppy/aliyun-push  gh-aliyun-push 3.2",
-            "git subtree push --prefix=poppy/faker  gh-faker 3.2",
-            "git subtree push --prefix=poppy/sensitive-word  gh-sensitive-word 3.2",
-            "git subtree push --prefix=poppy/ext-ip_store  gh-ext-ip_store 3.2",
-            "git subtree push --prefix=poppy/ext-pinyin  gh-ext-pinyin 3.2",
-            "git subtree push --prefix=poppy/ext-alipay  gh-ext-alipay 3.2"
-        ],
-        "post-install-cmd": [
-            "php artisan clear-compiled",
-            "php artisan ide-helper:generate"
-        ],
-        "pre-update-cmd": [
-        ],
-        "post-update-cmd": [
-            "php artisan clear-compiled",
-            "php artisan ide-helper:generate",
-            "php artisan ide-helper:meta"
-        ],
-        "post-root-package-install": [
-            "php -r \"copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "php -r \"copy('.env.example', '.env');\"",
-            "php artisan key:generate"
+            "src/Support/functions.php"
         ]
     },
     "config": {
-        "preferred-install": "dist",
-        "allow-plugins": {
-            "easywechat-composer/easywechat-composer": true
-        }
-    }
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev"
 }
