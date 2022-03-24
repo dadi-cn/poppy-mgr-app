@@ -33,7 +33,7 @@ class ServiceProvider extends PoppyServiceProvider
 
         // 注册 api 文档配置
         $this->publishes([
-            __DIR__ . '/../resources/config/sami-config.php' => storage_path('sami/config.php'),
+            __DIR__ . '/../resources/config/doctum-config.php' => storage_path('doctum/config.php'),
         ], 'poppy');
     }
 

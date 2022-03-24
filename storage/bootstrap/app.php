@@ -11,8 +11,6 @@
 */
 
 
-use Misc\Foundation\Handler;
-
 $app = new Poppy\Framework\Foundation\Application(
 	realpath(dirname(__DIR__, 2) . '/')
 );
@@ -40,7 +38,7 @@ $app->singleton(
 
 $app->singleton(
 	Illuminate\Contracts\Debug\ExceptionHandler::class,
-	Handler::class
+	Poppy\System\Http\Exception\Handler::class
 );
 
 /*

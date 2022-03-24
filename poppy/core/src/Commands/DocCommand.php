@@ -68,8 +68,8 @@ class DocCommand extends Command
                 );
                 break;
             case 'php':
-                $sami       = storage_path('sami/sami.phar');
-                $samiConfig = storage_path('sami/config.php');
+                $sami       = storage_path('doctum/doctum.phar');
+                $samiConfig = storage_path('doctum/config.php');
                 if (!file_exists($samiConfig)) {
                     $this->warn(
                         'Please Run Command To Publish Config:' . "\n" .
@@ -86,8 +86,8 @@ class DocCommand extends Command
                 }
                 else {
                     $this->warn(
-                        'Please Run Command To Install Sami.phar:' . "\n" .
-                        'curl http://get.sensiolabs.org/sami.phar --output ' . $sami
+                        'Please Run Command To Install doctum.phar:' . "\n" .
+                        'curl https://doctum.long-term.support/releases/latest/doctum.phar --output ' . $sami
                     );
                 }
                 break;
