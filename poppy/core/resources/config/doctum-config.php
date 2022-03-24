@@ -1,9 +1,9 @@
 <?php
 
-// config/sami.php
+// config/doctum.php
 // php ./resources/sami/sami.phar update ./resources/sami/config.php
 
-use Sami\Sami;
+use Doctum\Doctum;
 
 $baseDir       = dirname(dirname(__DIR__));
 $folders       = glob($baseDir . '/{modules,poppy}/*/src', GLOB_BRACE);
@@ -30,7 +30,7 @@ $options = [
     'theme'     => 'default',
     'title'     => 'Lemon Framework API Documentation',
     'build_dir' => $baseDir . '/public/docs/php',
-    'cache_dir' => $baseDir . '/storage/sami/cache',
+    'cache_dir' => $baseDir . '/storage/doctum/cache',
 ];
 
-return new Sami($iterator, $options);
+return new Doctum($iterator, $options);
