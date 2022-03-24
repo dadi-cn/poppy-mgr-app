@@ -1,9 +1,0 @@
-{
-	"name" : "op",
-	"slug" : "op",
-	"version" : "1.0",
-	"description" : "This is the description for the poppy auto module.",
-	"autoload" : [
-		"src/classes/functions.php"
-	]
-}
