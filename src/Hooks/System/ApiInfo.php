@@ -1,6 +1,6 @@
 <?php
 
-namespace Poppy\MgrApp\Services\System;
+namespace Poppy\MgrApp\Hooks\System;
 
 use Poppy\Core\Services\Contracts\ServiceArray;
 

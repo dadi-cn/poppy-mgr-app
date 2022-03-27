@@ -1,18 +1,18 @@
 <?php
 
-namespace Poppy\MgrApp\Services\MgrApp;
+namespace Poppy\MgrApp\Hooks\MgrApp;
 
 use Poppy\Core\Services\Contracts\ServiceArray;
 use Poppy\MgrApp\Http\Setting\SettingPam;
 use Poppy\MgrApp\Http\Setting\SettingSite;
 use Poppy\MgrApp\Http\Setting\SettingUpload;
 
-class ServiceSettings implements ServiceArray
+class Settings implements ServiceArray
 {
 
     public function key(): string
     {
-        return 'poppy.system';
+        return 'poppy.mgr-app';
     }
 
     public function data(): array

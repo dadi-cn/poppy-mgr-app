@@ -6,7 +6,6 @@ use Poppy\MgrApp\Classes\Grid\Column\Render\ActionsRender;
 use Poppy\MgrApp\Classes\Grid\Tools\Actions;
 use Poppy\MgrApp\Classes\Widgets\FilterWidget;
 use Poppy\MgrApp\Classes\Widgets\TableWidget;
-use Poppy\System\Classes\Grid\Filter;
 use Poppy\System\Models\PamAccount;
 use Poppy\System\Models\PamBan;
 use Poppy\System\Models\SysConfig;
@@ -44,7 +43,7 @@ class GridPamBan extends GridBase
 
     public function quick(Actions $actions)
     {
-        $type = input(Filter\Scope::QUERY_NAME, PamAccount::TYPE_USER);
+        $type = input(\Poppy\MgrPage\Classes\Grid\Filter\Scope::QUERY_NAME, PamAccount::TYPE_USER);
 
         // 黑名单/白名单
         $status  = sys_setting('py-mgr-page::ban.status-' . $type, SysConfig::DISABLE);
