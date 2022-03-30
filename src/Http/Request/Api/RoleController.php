@@ -1,6 +1,6 @@
 <?php
 
-namespace Poppy\MgrApp\Http\Request\Api\Backend;
+namespace Poppy\MgrApp\Http\Request\Api;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
@@ -8,9 +8,9 @@ use Illuminate\Http\Response;
 use Poppy\Framework\Classes\Resp;
 use Poppy\Framework\Exceptions\ApplicationException;
 use Poppy\MgrApp\Classes\Widgets\GridWidget;
-use Poppy\MgrApp\Http\Form\FormRoleEstablish;
-use Poppy\MgrApp\Http\Form\FormRolePermission;
-use Poppy\MgrApp\Http\Grid\GridPamRole;
+use Poppy\MgrApp\Http\MgrApp\FormRoleEstablish;
+use Poppy\MgrApp\Http\MgrApp\FormRolePermission;
+use Poppy\MgrApp\Http\MgrApp\GridPamRole;
 use Poppy\System\Action\Role;
 use Poppy\System\Models\PamAccount;
 use Poppy\System\Models\PamRole;

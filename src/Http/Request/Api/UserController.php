@@ -1,11 +1,11 @@
 <?php
 
-namespace Poppy\MgrApp\Http\Request\Api\Backend;
+namespace Poppy\MgrApp\Http\Request\Api;
 
 use Poppy\Core\Classes\Traits\CoreTrait;
 use Poppy\Core\Exceptions\PermissionException;
 use Poppy\Framework\Classes\Resp;
-use Poppy\MgrApp\Http\Form\FormPassword;
+use Poppy\MgrApp\Http\MgrApp\FormPassword;
 use Poppy\System\Models\PamAccount;
 use Poppy\System\Models\Resources\PamResource;
 

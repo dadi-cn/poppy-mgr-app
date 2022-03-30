@@ -1,13 +1,13 @@
 <?php
 
-namespace Poppy\MgrApp\Http\Request\Api\Backend;
+namespace Poppy\MgrApp\Http\Request\Api;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Poppy\Framework\Classes\Resp;
-use Poppy\MgrApp\Http\Form\FormMailTest;
-use Poppy\MgrApp\Http\Setting\SettingMail;
+use Poppy\MgrApp\Http\MgrApp\FormMailTest;
+use Poppy\MgrApp\Http\MgrApp\SettingMail;
 use Poppy\System\Classes\Traits\SystemTrait;
 
 /**

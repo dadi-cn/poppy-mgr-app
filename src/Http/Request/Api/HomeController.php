@@ -1,10 +1,11 @@
 <?php
 
-namespace Poppy\MgrApp\Http\Request\Api\Backend;
+namespace Poppy\MgrApp\Http\Request\Api;
 
 use Poppy\Framework\Classes\Resp;
 use Poppy\MgrApp\Classes\Widgets\SettingWidget;
-use Poppy\MgrApp\Http\Setting\SettingUpload;
+use Poppy\MgrApp\Http\MgrApp\SettingUpload;
+use function sys_cache;
 
 /**
  * 用户

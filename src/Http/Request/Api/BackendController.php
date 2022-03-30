@@ -1,10 +1,11 @@
 <?php
 
-namespace Poppy\MgrApp\Http\Request\Api\Backend;
+namespace Poppy\MgrApp\Http\Request\Api;
 
 use Poppy\Framework\Application\Controller;
 use Poppy\Framework\Classes\Traits\PoppyTrait;
 use Poppy\System\Models\PamAccount;
+use function py_container;
 
 /**
  * 后台初始化控制器

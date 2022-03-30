@@ -1,6 +1,6 @@
 <?php
 
-namespace Poppy\MgrApp\Http\Request\Api\Backend;
+namespace Poppy\MgrApp\Http\Request\Api;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
@@ -8,13 +8,13 @@ use Illuminate\Routing\Redirector;
 use Poppy\Framework\Classes\Resp;
 use Poppy\Framework\Exceptions\ApplicationException;
 use Poppy\MgrApp\Classes\Widgets\GridWidget;
-use Poppy\MgrApp\Http\Form\FormPamDisable;
-use Poppy\MgrApp\Http\Form\FormPamEnable;
-use Poppy\MgrApp\Http\Form\FormPamEstablish;
-use Poppy\MgrApp\Http\Form\FormPamPassword;
-use Poppy\MgrApp\Http\Grid\GridPamAccount;
-use Poppy\MgrApp\Http\Grid\GridPamLog;
-use Poppy\MgrApp\Http\Grid\GridPamToken;
+use Poppy\MgrApp\Http\MgrApp\FormPamDisable;
+use Poppy\MgrApp\Http\MgrApp\FormPamEnable;
+use Poppy\MgrApp\Http\MgrApp\FormPamEstablish;
+use Poppy\MgrApp\Http\MgrApp\FormPamPassword;
+use Poppy\MgrApp\Http\MgrApp\GridPamAccount;
+use Poppy\MgrApp\Http\MgrApp\GridPamLog;
+use Poppy\MgrApp\Http\MgrApp\GridPamToken;
 use Poppy\System\Action\Ban;
 use Poppy\System\Events\PamTokenBanEvent;
 use Poppy\System\Models\PamAccount;
@@ -22,6 +22,7 @@ use Poppy\System\Models\PamLog;
 use Poppy\System\Models\PamToken;
 use Response;
 use Throwable;
+use function event;
 
 /**
  * 账户管理
